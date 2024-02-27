@@ -247,7 +247,7 @@ export default function Login() {
             Sign Up
           </h1>
           <h1 class="text-sm font-semibold mb-6 text-gray-500 text-center">
-            Join to Our Community for Volunteering{" "}
+            Join Our Community To Volunteer{" "}
           </h1>
           <div class="mt-4 flex flex-col lg:flex-row items-center justify-between">
             <div class="w-full lg:w-1/2 mb-2 lg:mb-0">
