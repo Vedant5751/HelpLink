@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Login from "./pages/Login";
 import Home from "./pages/Home";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
@@ -9,10 +10,10 @@ function App() {
     <>
       <Router>
         <Routes>
-          <Route path="" element={<Home />} />
+          <Route path="" element={<Login />} />
+          <Route path="/home" element={<Home />} />
         </Routes>
       </Router>
-      <h1 className="text-3xl font-bold underline">Hello world!</h1>
     </>
   );
 }
