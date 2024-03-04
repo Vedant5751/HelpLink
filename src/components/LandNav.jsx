@@ -1,12 +1,20 @@
 import React from "react";
 
 export default function LandNav() {
+  const scrollTo = (elementId) => {
+    const element = document.getElementById(elementId);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <>
       <nav class="bg-white border-gray-200 dark:bg-gray-900">
         <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
           <a
-            href="https://github.com/Vedant5751/HelpLink" target="_blank"
+            href="https://github.com/Vedant5751/HelpLink"
+            target="_blank"
             class="flex items-center space-x-3 rtl:space-x-reverse"
           >
             <img src="./LogoDark.svg" class="h-8 bg-white" alt="Logo" />
@@ -58,7 +66,8 @@ export default function LandNav() {
               </li>
               <li>
                 <a
-                  href="footer"
+                  href="#"
+                  onClick={() => scrollTo("footer")}
                   class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
                 >
                   Contact Us
