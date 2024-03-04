@@ -5,44 +5,44 @@ export default function Footer() {
   return (
     <>
       <div id="footer">
-        <footer class="bg-white shadow dark:bg-gray-900 ">
-          <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
-            <div class="sm:flex sm:items-center sm:justify-between">
+        <footer className="bg-white shadow dark:bg-gray-900 ">
+          <div className="w-full max-w-screen-xl mx-auto p-4 md:py-8">
+            <div className="sm:flex sm:items-center sm:justify-between">
               <a
                 href="https://github.com/Vedant5751/HelpLink"
-                class="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse"
+                className="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse"
               >
-                <img src="./LogoDark.svg" class="h-8" alt="Logo" />
-                <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
+                <img src="./LogoDark.svg" className="h-8 bg-white" alt="Logo" />
+                <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
                   HelpLink
                 </span>
               </a>
-              <ul class="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400">
+              <ul className="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400">
                 <li>
-                  <a href="#" class="hover:underline me-4 md:me-6">
+                  <a href="#" className="hover:underline me-4 md:me-6">
                     Privacy Policy
                   </a>
                 </li>
                 <li>
-                  <a href="#" class="hover:underline me-4 md:me-6">
+                  <a href="#" className="hover:underline me-4 md:me-6">
                     Licensing
                   </a>
                 </li>
                 <li>
-                  <a href="#" class="hover:underline">
+                  <a href="#" className="hover:underline">
                     Terms of Service
                   </a>
                 </li>
               </ul>
             </div>
-            <div class="mb-6 flex justify-center space-x-2">
+            <div className="mb-6 flex justify-center space-x-2">
               <a
                 href="#!"
                 type="button"
-                class="rounded-full bg-transparent p-3 font-medium uppercase leading-normal text-surface transition duration-150 ease-in-out hover:bg-neutral-100 focus:outline-none focus:ring-0 dark:text-white dark:hover:bg-secondary-900"
+                className="rounded-full bg-transparent p-3 font-medium uppercase leading-normal text-surface transition duration-150 ease-in-out hover:bg-neutral-100 focus:outline-none focus:ring-0 dark:text-white dark:hover:bg-secondary-900"
                 data-twe-ripple-init
               >
-                <span class="[&>svg]:h-5 [&>svg]:w-5">
+                <span className="[&>svg]:h-5 [&>svg]:w-5">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="currentColor"
@@ -56,10 +56,10 @@ export default function Footer() {
               <a
                 href="#!"
                 type="button"
-                class="rounded-full bg-transparent p-3 font-medium uppercase leading-normal text-surface transition duration-150 ease-in-out hover:bg-neutral-100 focus:outline-none focus:ring-0 dark:text-white dark:hover:bg-secondary-900"
+                className="rounded-full bg-transparent p-3 font-medium uppercase leading-normal text-surface transition duration-150 ease-in-out hover:bg-neutral-100 focus:outline-none focus:ring-0 dark:text-white dark:hover:bg-secondary-900"
                 data-twe-ripple-init
               >
-                <span class="mx-auto [&>svg]:h-5 [&>svg]:w-5">
+                <span className="mx-auto [&>svg]:h-5 [&>svg]:w-5">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="currentColor"
@@ -73,10 +73,10 @@ export default function Footer() {
               <a
                 href="#!"
                 type="button"
-                class="rounded-full bg-transparent p-3 font-medium uppercase leading-normal text-surface transition duration-150 ease-in-out hover:bg-neutral-100 focus:outline-none focus:ring-0 dark:text-white dark:hover:bg-secondary-900"
+                className="rounded-full bg-transparent p-3 font-medium uppercase leading-normal text-surface transition duration-150 ease-in-out hover:bg-neutral-100 focus:outline-none focus:ring-0 dark:text-white dark:hover:bg-secondary-900"
                 data-twe-ripple-init
               >
-                <span class="mx-auto [&>svg]:h-5 [&>svg]:w-5">
+                <span className="mx-auto [&>svg]:h-5 [&>svg]:w-5">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="currentColor"
@@ -90,10 +90,10 @@ export default function Footer() {
               <a
                 href="#!"
                 type="button"
-                class="rounded-full bg-transparent p-3 font-medium uppercase leading-normal text-surface transition duration-150 ease-in-out hover:bg-neutral-100 focus:outline-none focus:ring-0 dark:text-white dark:hover:bg-secondary-900"
+                className="rounded-full bg-transparent p-3 font-medium uppercase leading-normal text-surface transition duration-150 ease-in-out hover:bg-neutral-100 focus:outline-none focus:ring-0 dark:text-white dark:hover:bg-secondary-900"
                 data-twe-ripple-init
               >
-                <span class="mx-auto [&>svg]:h-5 [&>svg]:w-5">
+                <span className="mx-auto [&>svg]:h-5 [&>svg]:w-5">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="currentColor"
@@ -107,10 +107,10 @@ export default function Footer() {
               <a
                 href="#!"
                 type="button"
-                class="rounded-full bg-transparent p-3 font-medium uppercase leading-normal text-surface transition duration-150 ease-in-out hover:bg-neutral-100 focus:outline-none focus:ring-0 dark:text-white dark:hover:bg-secondary-900"
+                className="rounded-full bg-transparent p-3 font-medium uppercase leading-normal text-surface transition duration-150 ease-in-out hover:bg-neutral-100 focus:outline-none focus:ring-0 dark:text-white dark:hover:bg-secondary-900"
                 data-twe-ripple-init
               >
-                <span class="mx-auto [&>svg]:h-5 [&>svg]:w-5">
+                <span className="mx-auto [&>svg]:h-5 [&>svg]:w-5">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="currentColor"
@@ -124,10 +124,10 @@ export default function Footer() {
               <a
                 href="#!"
                 type="button"
-                class="rounded-full bg-transparent p-3 font-medium uppercase leading-normal text-surface transition duration-150 ease-in-out hover:bg-neutral-100 focus:outline-none focus:ring-0 dark:text-white dark:hover:bg-secondary-900"
+                className="rounded-full bg-transparent p-3 font-medium uppercase leading-normal text-surface transition duration-150 ease-in-out hover:bg-neutral-100 focus:outline-none focus:ring-0 dark:text-white dark:hover:bg-secondary-900"
                 data-twe-ripple-init
               >
-                <span class="mx-auto [&>svg]:h-5 [&>svg]:w-5">
+                <span className="mx-auto [&>svg]:h-5 [&>svg]:w-5">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="currentColor"
