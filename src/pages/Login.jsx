@@ -12,15 +12,19 @@ export default function Login() {
     <div class="flex h-screen">
       <div class="hidden lg:flex items-center justify-center flex-1 bg-white text-black">
         <div class="max-w-md text-center">
-          <img src="./LogoDark.svg" class="border border-solid rounded-2xl shadow-2xl" alt="logo" />
+          <img
+            src="./LogoDark.svg"
+            class="border border-solid rounded-2xl shadow-2xl"
+            alt="logo"
+          />
         </div>
       </div>
-      <div class="w-full bg-gray-100 lg:w-1/2 flex items-center justify-center">
+      <div class="w-full bg-gray-100 lg:w-1/2 flex items-center dark:bg-gray-900 justify-center">
         <div class="max-w-md w-full p-6">
-          <h1 class="text-3xl font-semibold mb-6 text-black text-center">
+          <h1 class="text-3xl font-semibold mb-6 text-black dark:text-white text-center">
             Sign Up
           </h1>
-          <h1 class="text-sm font-semibold mb-6 text-gray-500 text-center">
+          <h1 class="text-sm font-semibold mb-6 text-gray-500 dark:text-white text-center">
             Join Our Community To Volunteer{" "}
           </h1>
           <div class="mt-4 flex flex-col lg:flex-row items-center justify-between">
@@ -72,14 +76,14 @@ export default function Login() {
               </button>
             </div>
           </div>
-          <div class="mt-4 text-sm text-gray-600 text-center">
+          <div class="mt-4 text-sm text-gray-600 dark:text-white text-center">
             <p>or with email</p>
           </div>
           <form action="#" method="POST" class="space-y-4">
             <div>
               <label
                 for="username"
-                class="block text-sm font-medium text-gray-700"
+                class="block text-sm font-medium text-gray-700 dark:text-white"
               >
                 Username
               </label>
@@ -93,7 +97,7 @@ export default function Login() {
             <div>
               <label
                 for="email"
-                class="block text-sm font-medium text-gray-700"
+                class="block text-sm font-medium text-gray-700 dark:text-white"
               >
                 Email
               </label>
@@ -107,7 +111,7 @@ export default function Login() {
             <div>
               <label
                 for="password"
-                class="block text-sm font-medium text-gray-700"
+                class="block text-sm font-medium text-gray-700 dark:text-white"
               >
                 Password
               </label>
@@ -128,10 +132,10 @@ export default function Login() {
               </button>
             </div>
           </form>
-          <div class="mt-4 text-sm text-gray-600 text-center">
+          <div class="mt-4 text-sm text-gray-600 text-center dark:text-white">
             <p>
               Already have an account?{" "}
-              <a href="#" class="text-black hover:underline">
+              <a href="#" class="text-black hover:underline dark:text-blue-200">
                 Login here
               </a>
             </p>
