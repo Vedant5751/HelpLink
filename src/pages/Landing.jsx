@@ -1,7 +1,7 @@
 import React from "react";
 import LandNav from "../components/LandNav";
 import Hero from "../components/Hero";
-
+import About from "../components/About";
 import Footer from "../components/Footer";
 
 export default function Landing() {
@@ -9,10 +9,7 @@ export default function Landing() {
     <>
       <LandNav />
       <Hero />
-      <h1 className="text-3xl bg-yellow-500 mb-24 font-bold underline">
-        Project Showcase
-      </h1>
-
+      <About />
       <Footer />
     </>
   );
