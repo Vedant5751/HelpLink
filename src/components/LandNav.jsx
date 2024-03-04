@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function Navbar() {
+export default function LandNav() {
   return (
     <>
       <nav class="bg-white border-gray-200 dark:bg-gray-900">
@@ -21,7 +21,6 @@ export default function Navbar() {
             aria-controls="navbar-default"
             aria-expanded="false"
           >
-            <span class="sr-only">Open main menu</span>
             <svg
               class="w-5 h-5"
               aria-hidden="true"
@@ -54,28 +53,12 @@ export default function Navbar() {
                   href="#"
                   class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
                 >
-                  About
+                  About Us
                 </a>
               </li>
               <li>
                 <a
-                  href="#"
-                  class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
-                >
-                  Projects
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
-                >
-                  Events
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
+                  href="footer"
                   class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
                 >
                   Contact Us
