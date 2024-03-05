@@ -1,64 +1,3 @@
-import React from "react";
-
-export default function VolProfile() {
-  // const formSubmit = async (formdata) => {
-  //   console.log(formdata);
-  //   const response = await fetch("localhost:3000/volProfile", {
-  //     method: "POST",
-  //     headers: {
-  //       "Content-Type": "application/json",
-  //     },
-  //     body: JSON.stringify(formdata),
-  //   });
-  //   const data = await response.json();
-  //   console.log(data);
-  // };
-  const formSubmit = async () => {
-    const formdata = {
-      email: document.getElementById("floating_email").value,
-      first_name: document.getElementById("floating_first_name").value,
-      last_name: document.getElementById("floating_last_name").value,
-      phone: document.getElementById("floating_phone").value,
-      company: document.getElementById("floating_company").value,
-      availability: document.getElementById("availability").value,
-      address: document.getElementById("address").value,
-    };
-    // console.log(formdata);
-    try {
-      const response = await fetch("http://localhost:3000/volProfile", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(formdata),
-      });
-      if (response.ok) {
-        const data = await response.json();
-        console.log("Data", data);
-      } else {
-        console.log("Error:", response.status);
-      }
-    } catch (error) {
-      console.log("Error while fetching:", error);
-    }
-  };
-
-  return (
-    <div className="flex items-center justify-center h-screen bg-[url('https://3.files.edl.io/970c/21/09/13/164108-9ec045e3-5aed-408c-b569-370003c09649.png')] bg-cover bg-center">
-      <div className="border border-black p-24 rounded-3xl dark:bg-gray-900 opacity-95">
-        {/* <form onClick={formSubmit}>
-          <div>
-            <label htmlFor="name">Name</label>
-            <input id="name" type="text" nam="name" />
-          </div>
-          <div>
-            <label htmlFor="email">email</label>
-            <input id="email" type="email" name="email" />
-          </div>
-          <button type="submit" className=" bg-white">
-            Submit
-          </button>
-        </form> */}
         <form className="max-w-md mx-auto">
           <div className="relative z-0 w-full mb-5 group">
             <input
@@ -259,7 +198,3 @@ export default function VolProfile() {
             Submit
           </button>
         </form>
-      </div>
-    </div>
-  );
-}
