@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-export default function LandNav() {
+export default function HomeNav() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => {
