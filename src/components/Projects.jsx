@@ -5,7 +5,7 @@ export default function Projects() {
     <div id="Projects">
       <div class="container my-24 mx-auto md:px-6">
         <section class="mb-32 text-center">
-          <h2 class="mb-12 pb-4 text-center text-3xl font-bold">
+          <h2 class="mb-12 pb-4 text-center text-3xl font-bold text-white">
             Projects we are proud of
           </h2>
 
@@ -28,11 +28,11 @@ export default function Projects() {
                   </div>
                 </div>
                 <div class="p-6">
-                  <h5 class="mb-4 text-lg font-bold">White city</h5>
+                  <h5 class="mb-4 text-lg font-bold">Chennai</h5>
                   <p class="mb-6">
-                    Ut pretium ultricies dignissim. Sed sit amet mi eget urna
-                    placerat vulputate. Ut vulputate est non quam dignissim
-                    elementum. Donec a ullamcorper diam.
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Ratione sunt corrupti id quae totam fugiat aspernatur
+                    accusantium praesentium voluptas.
                   </p>
                   <a
                     href="#!"
@@ -64,11 +64,11 @@ export default function Projects() {
                   </div>
                 </div>
                 <div class="p-6">
-                  <h5 class="mb-4 text-lg font-bold">A lonely bench</h5>
+                  <h5 class="mb-4 text-lg font-bold">Marina Beach</h5>
                   <p class="mb-6">
-                    Suspendisse in volutpat massa. Nulla facilisi. Sed aliquet
-                    diam orci, nec ornare metus semper sed. Integer volutpat
-                    ornare erat sit amet rutrum.
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Ratione sunt corrupti id quae totam fugiat aspernatur
+                    accusantium praesentium voluptas.
                   </p>
                   <a
                     href="#!"
@@ -100,11 +100,13 @@ export default function Projects() {
                   </div>
                 </div>
                 <div class="p-6">
-                  <h5 class="mb-4 text-lg font-bold">Happy snow</h5>
+                  <h5 class="mb-4 text-lg font-bold">
+                    Tambaram Railway Station
+                  </h5>
                   <p class="mb-6">
-                    Curabitur tristique, mi a mollis sagittis, metus felis
-                    mattis arcu, non vehicula nisl dui quis diam. Mauris ut
-                    risus eget massa volutpat feugiat. Donec.
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Ratione sunt corrupti id quae totam fugiat aspernatur
+                    accusantium praesentium voluptas.
                   </p>
                   <a
                     href="#!"

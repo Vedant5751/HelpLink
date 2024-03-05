@@ -35,7 +35,7 @@ export default function HomeHero() {
               <Link to="/about">
                 <a
                   href="#"
-                  class="block w-full rounded bg-white px-12 py-3 text-sm font-medium text-gray-900 shadow hover:text-gray-900 focus:outline-none focus:ring active:text-gray-900 sm:w-auto"
+                  class="block w-full rounded hover:bg-slate-400 bg-white px-12 py-3 text-sm font-medium text-gray-900 shadow hover:text-gray-900 focus:outline-none focus:ring active:text-gray-900 sm:w-auto"
                 >
                   Learn More
                 </a>
