@@ -3,7 +3,7 @@ import React from "react";
 export default function Projects() {
   return (
     <div id="Projects">
-      <div className="container my-24 mx-auto md:px-6">
+      <div className="container my-24 mx-auto md:px-6 border-b border-gray-300">
         <section className="mb-32 text-center">
           <h2 className="mb-12 pb-4 text-center text-3xl font-bold text-white">
             Projects we are proud of
