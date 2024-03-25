@@ -1,9 +1,51 @@
 import React from "react";
 
 export default function ColProfile() {
+  const formSubmit = async () => {
+    const formdata = {
+      email: document.getElementById("floating_email").value,
+      first_name: document.getElementById("floating_first_name").value,
+      last_name: document.getElementById("floating_last_name").value,
+      phone: document.getElementById("floating_phone").value,
+      company: document.getElementById("floating_company").value,
+      availability: document.getElementById("availability").value,
+      address: document.getElementById("address").value,
+    };
+    try {
+      const response = await fetch("http://localhost:3000/ColProfile", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formdata),
+      });
+      if (response.ok) {
+        const data = await response.json();
+        console.log("Data", data);
+      } else {
+        console.log("Error:", response.status);
+      }
+    } catch (error) {
+      console.log("Error while fetching:", error);
+    }
+  };
+
   return (
-    <div className="flex items-center justify-center h-screen bg-[url('https://production-arc-us-gov-west-1-attachments.s3-us-gov-west-1.amazonaws.com/s3fs-public/VMIS_icon2.png')] bg-center">
+    <div className="flex items-center justify-center h-screen bg-[url('https://3.files.edl.io/970c/21/09/13/164108-9ec045e3-5aed-408c-b569-370003c09649.png')] bg-cover bg-center">
       <div className="border border-black p-24 rounded-3xl dark:bg-gray-900 opacity-95">
+        {/* <form onClick={formSubmit}>
+          <div>
+            <label htmlFor="name">Name</label>
+            <input id="name" type="text" nam="name" />
+          </div>
+          <div>
+            <label htmlFor="email">email</label>
+            <input id="email" type="email" name="email" />
+          </div>
+          <button type="submit" className=" bg-white">
+            Submit
+          </button>
+        </form> */}
         <form className="max-w-md mx-auto">
           <div className="relative z-0 w-full mb-5 group">
             <input
@@ -58,8 +100,8 @@ export default function ColProfile() {
           <div className="grid md:grid-cols-2 md:gap-6">
             <div className="relative z-0 w-full mb-5 group">
               <input
-                type="tel"
-                pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                type="number"
+                // pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
                 name="floating_phone"
                 id="floating_phone"
                 className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
@@ -99,7 +141,7 @@ export default function ColProfile() {
                 className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
                 required
               >
-                <option value="" disabled selected>
+                <option value="" disabled defaultValue>
                   Select Availability
                 </option>
                 <option className="dark:text-black" value="weekday">
@@ -144,7 +186,7 @@ export default function ColProfile() {
                 className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
                 required
               >
-                <option value="" disabled selected>
+                <option value="" disabled defaultValue>
                   Select Gender
                 </option>
                 <option className="dark:text-black" value="male">
@@ -197,7 +239,8 @@ export default function ColProfile() {
             </label>
           </div>
           <button
-            type="submit"
+            type="button"
+            onClick={() => formSubmit()}
             className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
           >
             Submit

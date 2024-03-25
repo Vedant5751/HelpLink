@@ -1,12 +1,17 @@
 const express = require('express');
-const router = express.Router();
-const Volunteer = require("../models/volunteers");
-
-// data-base 
 const mongoose = require("mongoose");
-mongoose.set('strictQuery', false);
+
+const Volunteer = require("../models/volunteers");
+const Collaborator = require("../models/collaborators");
+
+const router = express.Router();
+
 const mongoDB = "mongodb://localhost:27017/VolunteerDB";
+
+mongoose.set('strictQuery', false);
+
 main().catch((err) => console.log(err));
+
 async function main() {
   await mongoose.connect(mongoDB);
   console.log('connected to mongoDB');
@@ -18,7 +23,12 @@ router.get('/', function(req, res, next) {
 });
 
 router.post("/volProfile", async(req,res) => {
-  const valProfile = await Volunteer.create(req.body) 
+  const volProfile = await Volunteer.create(req.body) 
+  res.json(req.body)
+})
+
+router.post("/ColProfile", async(req,res) => {
+  const colProfile = await Collaborator.create(req.body) 
   res.json(req.body)
 })
 
